@@ -1,0 +1,19 @@
+#navbar {
+  .user-name {
+    position: relative;
+    display: block;
+    padding: 15px;
+  }
+}
+
+main section.users-login,
+main section.users-register {
+  form {
+    width: 50%;
+    > * {
+      margin: 0.5em 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
