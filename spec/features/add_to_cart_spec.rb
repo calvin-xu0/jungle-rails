@@ -16,15 +16,15 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
     end
   end
   
-  scenario "They see click the product and see its details" do
+  scenario "They add a product and see the nav bar's cart text update" do
     visit root_path
-    page.first('.product').first('a').click
+    page.first('.product').find_button('Add').click
 
     # DEBUG
     sleep 3
     save_and_open_screenshot
 
-    expect(page).to have_css "article.product-detail"
+    expect(page).to have_text "My Cart (1)"
   end
 
 end
