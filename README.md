@@ -1,8 +1,18 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2. Purchasing is done using Stripe's payment APIs.
 
-## Additional Steps for Apple M1 Machines
+![Home page with categories](/docs/store_categories.png)*The category dropdown is shown above.*
+
+Shoppers can filter through products by category as well as view more information about the products they want to buy by clicking on the relevant item.
+
+![Admin products page](/docs/admin_products.png)*The seller can view all products in the store as well as delete any undesired items.*
+
+Sellers can add categories as well as products to the storefront, as well as view store-wide statistics through an admin-only dashboard.
+
+
+
+## Preliminary Setup Steps for Apple M1 Machines
 
 1. Make sure that you are runnning Ruby 2.6.6 (`ruby -v`)
 1. Install ImageMagick `brew install imagemagick imagemagick@6 --build-from-source`
